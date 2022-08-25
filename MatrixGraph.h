@@ -13,6 +13,7 @@ public:
     explicit MatrixGraph() = default;
     explicit MatrixGraph(int n);
     MatrixGraph(const  MatrixGraph &L);
+    explicit MatrixGraph(Graph* G);
     explicit MatrixGraph(const class IGraph &G);
     explicit MatrixGraph(const class ListGraph &L);
     void showGraph() const override;

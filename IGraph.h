@@ -24,6 +24,7 @@ public:
 
    IGraph(const IGraph &G);
    explicit IGraph(int n);
+   explicit IGraph(Graph *G);
    explicit IGraph(const class ListGraph &L);
    explicit IGraph(const class MatrixGraph &M);
    void showGraph() const override;

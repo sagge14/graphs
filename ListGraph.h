@@ -13,6 +13,7 @@ public:
     explicit ListGraph() = default;
     explicit ListGraph(int n);
     ListGraph(const ListGraph &L);
+    explicit ListGraph(Graph *G);
     explicit ListGraph(const class IGraph &G);
     explicit ListGraph(const class MatrixGraph &M);
     void AddEdge() override;

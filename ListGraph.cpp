@@ -98,3 +98,20 @@ ListGraph &ListGraph::operator=(const IGraph &graph) {
     *this = bufL;
     return *this;
 }
+ListGraph::ListGraph(Graph *G) {
+    MatrixGraph* M = dynamic_cast<MatrixGraph*>(G);
+    if(M)
+        *this = *M;
+    else
+    {
+        ListGraph* L = dynamic_cast<ListGraph*>(G);
+        if(L)
+            *this = *L;
+        else
+        {
+            IGraph*  GG = dynamic_cast<IGraph*>(G);
+            if(GG)
+                *this = *GG;
+        }
+    }
+}
