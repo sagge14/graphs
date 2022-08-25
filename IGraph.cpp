@@ -95,6 +95,9 @@ IGraph::IGraph(int n) {
 }
 
 IGraph::IGraph(Graph *G) {
+    if(G == nullptr)
+        return;
+
     MatrixGraph* M = dynamic_cast<MatrixGraph*>(G);
     if(M)
         *this = *M;

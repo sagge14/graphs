@@ -99,6 +99,8 @@ ListGraph &ListGraph::operator=(const IGraph &graph) {
     return *this;
 }
 ListGraph::ListGraph(Graph *G) {
+    if(G == nullptr)
+        return;
     MatrixGraph* M = dynamic_cast<MatrixGraph*>(G);
     if(M)
         *this = *M;
