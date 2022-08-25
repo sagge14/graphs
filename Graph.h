@@ -1,10 +1,14 @@
 //
 // Created by Sg on 19.08.2022.
 //
-#include <vector>
-#include <iostream>
-using namespace std;
 #pragma once
+#include <vector>
+#include <memory>
+#include <iostream>
+#include <unordered_set>
+#include <set>
+using namespace std;
+
 class Graph {
 protected:
     int countNodes = 0;

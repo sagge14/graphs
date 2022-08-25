@@ -1,9 +1,11 @@
 //
 // Created by Sg on 18.08.2022.
 //
-//#include "Graph.h"
-#include <set>
 #pragma once
+#include "IGraph.h"
+#include "MatrixGraph.h"
+#include "Graph.h"
+
 class ListGraph:public Graph
 {
     vector<shared_ptr<set<int>>> list;

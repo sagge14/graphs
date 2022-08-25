@@ -2,10 +2,7 @@
 // Created by Sg on 17.08.2022.
 //
 
-#include <iostream>
 #include "MatrixGraph.h"
-#include "ListGraph.h"
-#include "IGraph.h"
 
 MatrixGraph::MatrixGraph(const IGraph &G) : MatrixGraph(G.getNodesCount()){
 
@@ -112,8 +109,10 @@ MatrixGraph &MatrixGraph::operator=(const MatrixGraph& graph) {
 }
 
 MatrixGraph::MatrixGraph(const MatrixGraph &L) : Graph(L) {
+    shared_ptr<int>* g = new shared_ptr<int>;
     *this = L;
 }
+
 
 MatrixGraph &MatrixGraph::operator=(const ListGraph& graph)
 {

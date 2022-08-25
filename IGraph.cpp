@@ -1,9 +1,6 @@
 //
 // Created by Sg on 17.08.2022.
 //
-#include <iostream>
-#include "MatrixGraph.h"
-#include "ListGraph.h"
 #include "IGraph.h"
 
 void IGraph::AddEdge() {

@@ -1,12 +1,12 @@
 //
 // Created by Sg on 17.08.2022.
 //
-#include "myHash.h"
-#include "Graph.h"
-#include <vector>
-#include <unordered_set>
-#include <set>
 #pragma once
+#include "myHash.h"
+#include "MatrixGraph.h"
+#include "ListGraph.h"
+#include "Graph.h"
+
 using namespace std;
 struct Edge;
 static bool operator==(const Edge &n1, const Edge &n2)

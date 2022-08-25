@@ -1,11 +1,7 @@
 //
 // Created by Sg on 18.08.2022.
 //
-
-#include "IGraph.h"
-#include "MatrixGraph.h"
 #include "ListGraph.h"
-#include "iostream"
 
 ListGraph::ListGraph(const class IGraph &G): ListGraph(G.getNodesCount()) {
 
