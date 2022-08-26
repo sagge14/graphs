@@ -14,7 +14,7 @@ int main() {
     int countEdges = 0;
     auto **graphs = new Graph*[4];
     cout << "---Graphs---" << endl;
-    cout << "Enter graph type:";
+    cout << "Enter graph type(1-3):";
     cin >> type;
     cout << "Enter count of nodes:";
     cin >> countNodes;

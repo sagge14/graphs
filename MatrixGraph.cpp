@@ -108,9 +108,8 @@ MatrixGraph &MatrixGraph::operator=(const MatrixGraph& graph) {
     return *this;
 }
 
-MatrixGraph::MatrixGraph(const MatrixGraph &L) : Graph(L) {
-    shared_ptr<int>* g = new shared_ptr<int>;
-    *this = L;
+MatrixGraph::MatrixGraph(const MatrixGraph &M) : Graph(M) {
+    *this = M;
 }
 
 
